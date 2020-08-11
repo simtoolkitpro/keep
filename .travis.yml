@@ -10,8 +10,10 @@ branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
 deploy:
-      provider: releases
-      api_key: $GITHUB_OAUTH_TOKEN
-      cleanup: true
-      on:
-        tags: false
+  provider: releases
+  api_key: $GITHUB_OAUTH_TOKEN
+  file_glob: true
+  file: dist/*
+  skip_cleanup: true
+  on:
+    tags: false
