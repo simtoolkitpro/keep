@@ -3,7 +3,6 @@
   "productName": "Keep",
   "version": "0.1.5",
   "description": "Desktop app for Google Keep packaged with Electron",
-  "electronVersion": "0.36.0",
   "main": "app/index.js",
   "files": [
     "build",
