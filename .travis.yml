@@ -5,8 +5,13 @@ matrix:
       language: node_js
       node_js: "12"
 script:
-- npm run lint
-- npm run dist
+- npm run dist:mac
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
+deploy:
+      provider: releases
+      api_key: $GITHUB_OAUTH_TOKEN
+      skip_cleanup: true
+      on:
+        tags: true
