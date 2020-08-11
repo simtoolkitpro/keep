@@ -27,8 +27,8 @@ sudo apt-get install nodejs-legacy
 
 [UNLICENSE][unlicense]
 
-[travis-url]: https://travis-ci.org/andrepolischuk/keep
-[travis-image]: https://travis-ci.org/andrepolischuk/keep.svg?branch=master
+[travis-url]: https://travis-ci.org/simtoolkitpro/keep
+[travis-image]: https://travis-ci.org/simtoolkitpro/keep.svg?branch=master
 
 [google-keep]: https://keep.google.com
 [electron]: http://electron.atom.io
