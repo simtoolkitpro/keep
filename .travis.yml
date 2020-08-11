@@ -23,7 +23,7 @@ script:
         -v ~/.cache/electron:/root/.cache/electron \
         -v ~/.cache/electron-builder:/root/.cache/electron-builder \
         electronuserland/builder:wine-mono \
-        /bin/bash -c "npm run dist:linux"
+        /bin/bash -c "npm install && npm run dist:linux"
     elif [ "$TRAVIS_OS_NAME" == "windows" ]; then
       npm run dist:win;
     else

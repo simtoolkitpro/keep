@@ -12,7 +12,7 @@ module.exports = function createMainWindow (handleResize, handleClosed) {
     y: lastWindowState.y,
     width: lastWindowState.width,
     height: lastWindowState.height,
-    icon: join(__dirname, '../build/icon.png'),
+    icon: path.join(__static, "icon.png"),
     title: 'Keep',
     titleBarStyle: 'hiddenInset',
     webPreferences: {
